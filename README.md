@@ -1,15 +1,16 @@
 ### Date created
-Include the date you created this project and README file.
+bikeshare_tucci.py created 2020-5-20
+readme.md created  3030-5-23
 
 ### Project Title
-Replace the Project Title
+Bikeshare Project
 
 ### Description
-Describe what your project is about and what it does
+This project querys bikeshare data for three different US cities
 
 ### Files used
-Include the files used
+washington.csv
+chicago.csv
+new_york_city.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
