@@ -18,6 +18,8 @@ def get_filters():
 
     valid_month_responses = ['jan','feb','mar','apr','may','jun','all']
 
+#Added .lower below to allow code to handle wider variety of inputs
+
     month = input('Which month would you like to view data for? Please enter: Jan, Feb, Mar, Apr, May, Jun, or All.\n').lower()
 
     while month not in valid_month_responses:
