@@ -14,3 +14,8 @@ chicago.csv
 new_york_city.csv
 
 ### Credits
+Udacity Introduction to Python Course:
+https://classroom.udacity.com/nanodegrees/nd104/parts/53470233-d93c-4a31-a59f-11388272fe6b
+
+Hackerrank Python Practice Exercises
+https://www.hackerrank.com/domains/python?filters%5Bstatus%5D%5B%5D=unsolved&badge_type=python
