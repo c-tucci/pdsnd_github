@@ -178,7 +178,6 @@ def user_stats(df, city):
         print('The most common user birth year was:')
         print(df['Birth Year'].mode()[0])
 
-
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
