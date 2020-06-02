@@ -2,6 +2,8 @@ import time
 import pandas as pd
 import numpy as np
 
+invalid_input = 'Sorry that is not a valid input. Please try again.'
+
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
@@ -13,7 +15,7 @@ def get_filters():
     city = input('Would you like to see data for New York City, Chicago, or Washington?\n').lower()
 
     while city not in CITY_DATA:
-        print('Sorry that is not a valid input. Please try again.')
+        print(invalid_input)
         city = input('Would you like to see data for New York City, Chicago, or Washington?\n').lower()
 
     valid_month_responses = ['jan','feb','mar','apr','may','jun','all']
@@ -23,7 +25,7 @@ def get_filters():
     month = input('Which month would you like to view data for? Please enter: Jan, Feb, Mar, Apr, May, Jun, or All.\n').lower()
 
     while month not in valid_month_responses:
-        print('Sorry that is not a valid input. Please Try again.')
+        print(invalid_input)
         month = input('Which month would you like to view data for? Please enter: Jan, Feb, Mar, Apr, May, Jun, or All.\n').lower()
 
     valid_day_responses = ['mon','tue','wed','thu','fri','sat','sun', 'all']
@@ -31,7 +33,7 @@ def get_filters():
     day = input('Which day would you like to view data for? Please enter: Mon, Tue, Wed, Thu, Fri, Sat, Sun, or All.\n').lower()
 
     while day not in valid_day_responses:
-        print('Sorry that is not a valid input. Please Try again.')
+        print(invalid_input)
         day = input('Which day would you like to view data for? Please enter: Mon, Tue, Wed, Thu, Fri, Sat, Sun, or All.\n').lower()
 
     print('-'*40)
@@ -177,7 +179,6 @@ def user_stats(df, city):
 
         print('The most common user birth year was:')
         print(df['Birth Year'].mode()[0])
-
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
